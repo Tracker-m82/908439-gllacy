@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Герман Зеленецкий](https://up.htmlacademy.ru/htmlcss/23/user/908439).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Михин](https://htmlacademy.ru/profile/undgrnd).
 
 ---
 
