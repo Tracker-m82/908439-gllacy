@@ -12,13 +12,13 @@
         </a>
         <ul class="main-navigation">
           <li><a href="catalog.html">Каталог</a>
-            <select size="5" class="catalog-list">
-              <option  value="1">Новинки</option>
-              <option  value="2">Сливочное</option>
-              <option  value="3" selected>Щербеты</option>
-              <option  value="4">Фруктовый лед</option>
-              <option  value="5">Мелорин</option>
-            </select>
+            <ul class="drop-down list">
+              <li>Новинки</li>
+              <li>Сливочное</li>
+              <li>Щербеты</li>
+              <li>Фруктовый лед</li>
+              <li>Мелорин</li>
+            </ul>
           </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О Компании</a></li>
@@ -26,16 +26,19 @@
         <ul class="user-navigation">
           <li class="search"><a class="button" href="#"><img src="img/loupe.svg" alt="Поиск"></a>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input type="text" name="search" placeholder="Что ищем?">
+              <label for="search" class="visually-hidden">Поиск</label>
+              <input id="search" class="input-text" type="text" name="search" placeholder="Что ищем?">
             </form>
           </li>
           <li class="login-link"><a class="button" href="#"><img src="img/entrance.svg" alt="Вход">Вход</a>
             <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
               <p>
-                <input class="login-user" type="text" name="user-login" placeholder="Электронная почта">
+                <label for="login" class="visually-hidden">Логин</label>
+                <input id="login" class="input-text" type="text" name="user-login" placeholder="Электронная почта">
               </p>
               <p>
-                <input class="login-password" type="password" name="password" placeholder="Пароль">
+                <label for="password" class="visually-hidden">Пароль</label>
+                <input id="password" class="input-text" type="password" name="password" placeholder="Пароль">
               </p>
               <button type="submit">Войти</button>
               <p>
@@ -111,20 +114,23 @@
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
       <div class="footer-copyright">
-        <img src="img/logo-htmlacademy.svg" alt="Логотип html academy" width="108" height="36">
+        <img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="108" height="36">
         <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>© 2017</p>
       </div>
     </footer>
     <form class="feedback" action="https://echo.htmlacademy.ru/" method="post">
       <h3>Мы обязательно вам ответим</h3>
         <p>
-          <input type="text" name="name" placeholder="Как вас зовут?">
+          <label for="feedback-name" class="visually-hidden">Ваше имя</label>
+          <input id="feedback-name" class="input-text" type="text" name="name" placeholder="Как вас зовут?">
         </p>
         <p>
-          <input type="text" name="email" placeholder="Ваша почта для ответа?">
+          <label for="feedback-email" class="visually-hidden">Ваша почта</label>
+          <input id="feedback-email" class="input-text" type="text" name="email" placeholder="Ваша почта для ответа?">
         </p>
         <p>
-          <input type="text" name="comments" placeholder="Напишите что нибудь...">
+          <label for="feedback-comments" class="visually-hidden">Ваши комментарии</label>
+          <textarea id="feedback-comments" name="comments" rows="8" cols="40" placeholder="Напишите что нибудь..."></textarea>
         </p>
         <button type="submit">Отправить</button>
         <button class="modal-close"></button>
