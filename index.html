@@ -17,7 +17,23 @@
         </ul>
         <ul class="user-navigation">
           <li class="search"><a class="button" href="#"><img src="img/loupe.svg" alt="Поиск"></a></li>
+          <form class="search-form" action="index.html" method="post">
+            <input type="text" name="search" placeholder="Что ищем?">
+          </form>
           <li class="login-link"><a class="button" href="#"><img src="img/entrance.svg" alt="Вход">Вход</a></li>
+          <form class="login-form" action="index.html" method="post">
+            <p>
+              <input class="login-user" type="text" name="user-login" placeholder="Электронная почта">
+            </p>
+            <p>
+              <input class="login-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <button type="submit">Войти</button>
+            <p>
+              <a href="#">Забыли пароль?</a><br>
+              <a href="#">Новая регистрация</a>
+            </p>
+          </form>
           <li class="cart"><a class="button" href="#"><img src="img/basket.svg" alt="Корзина">Пусто</a></li>
         </ul>
       </nav>
@@ -85,9 +101,23 @@
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
       <div class="footer-copyright">
-        <img src="img/logo-htmlacademy.svg" alt="Логотип html academy" width="109" height="38">
+        <img src="img/logo-htmlacademy.svg" alt="Логотип html academy" width="108" height="37">
         <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>© 2017</p>
       </div>
     </footer>
+    <form class="Feedback" action="index.html" method="post">
+      <h3>Мы обязательно вам ответим</h3>
+        <p>
+          <input type="text" name="" placeholder="Как вас зовут?">
+        </p>
+        <p>
+          <input type="text" name="" placeholder="Ваша почта для ответа?">
+        </p>
+        <p>
+          <input type="text" name="" placeholder="Напишите что нибудь...">
+        </p>
+        <button type="submit">Отправить</button>
+        <button type="modal-close"></button>
+    </form>
   </body>
 </html>
