@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px ;
+  color: #ffffff;
+  text-transform: none;
+
+  background-color: #849D8F;
+}
+
+a {
+  text-decoration: underline;
+  color: #ffffff;
+  text-decoration-color: #ffffff;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #849D8F;
+}
+
+.main-navigation-list,
+.user-navigation,
+.drop-down-list {
+  list-style: none;
+}
+
+.drop-down-list a {
+  text-decoration: none;
+}
+
+.main-navigation-list a:hover {
+  background-color: #fbded7;
+}
+
+.main-navigation-list a:focus {
+  background-color: #f6b5a5;
+}
+
+.main-navigation-list a:active {
+  background-color: #d07058;
+}
+
+.timetable {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+
+}
+
+.phone {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.feature {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.features-list {
+  font-weight: 400;
+  color: #323232;
+  columns: 2;
+  list-style: none;
+  background-image: url("../img/waffle-big.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.nwes-box {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #323232;
+
+  background-image: url("../img/strawberry-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
