@@ -44,7 +44,7 @@
                 <input id="password" class="input-text" type="password" name="password" placeholder="Пароль">
               </p>
               <button type="submit">Войти</button>
-              <p>
+              <p class="help">
                 <a href="#">Забыли пароль?</a><br>
                 <a href="#">Новая регистрация</a>
               </p>
@@ -73,16 +73,18 @@
           <li class="features-item"><img src="img/thermometer.svg" alt="Термоупаковка">Доставка нашего мороженого до заказчиков осуществляется в специальном термопакете, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
         </ul>
       </section>
-      <section class="news-box">
-        <h2 class="visually-hidden">Новости</h2>
-        <p class="news">Новое в нашем блоге</p>
-        <p class="news"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
-      </section>
-      <section class="subscription">
-        <h2 class="visually-hidden">Подписка</h2>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!--form-->
-      </section>
+      <div class="index-columns">
+        <section class="news-box">
+          <h2 class="visually-hidden">Новости</h2>
+          <p class="news">Новое в нашем блоге</p>
+          <p class="news"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+          </section>
+        <section class="subscription">
+          <h2 class="visually-hidden">Подписка</h2>
+          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+          <!--form-->
+        </section>
+      </div>
       <section class="contacts">
         <h2 class="visually-hidden">Как нас найти</h2>
         <!--form-->
@@ -97,8 +99,9 @@
         </p>
         <p>
           Для заказов по телефону:<br>
-          <b>8 812 450-25-25</b><br>
-          (с 10 до 20 ежедневно)
+          <b>8 812 450-25-25<br>
+          (с 10 до 20<br>
+           ежедневно)</b>
         </p>
         <a class="button" href="#">Форма обратной связи</a>
       </section>
@@ -111,7 +114,7 @@
         <li><a class="social-button vkontakte" href="#"><img src="img/vk.svg" alt="Вконтакте"></a></li>
       </ul>
       <ul class="info">
-        <li><a href="#"><img src="img/heart.svg" alt="Сердечко">Для поставщиков</a></li>
+        <li><a href="#"><b>Для поставщиков</b></a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
@@ -133,7 +136,7 @@
         </p>
         <p>
           <label for="feedback-comments" class="visually-hidden">Ваши комментарии</label>
-          <textarea id="feedback-comments" name="comments" rows="8" cols="40" placeholder="Напишите что нибудь..."></textarea>
+          <textarea class="comments" id="feedback-comments" name="comments" rows="8" cols="40" placeholder="Напишите что нибудь..."></textarea>
         </p>
         <button type="submit">Отправить</button>
         <button class="modal-close"></button>
