@@ -46,11 +46,35 @@ a {
   background-color: #d07058;
 }
 
+.input-text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+}
+
+.search .input-text {
+  width: 314px;
+  height: 47px;
+}
+
+.login-link .input-text {
+  width: 244px;
+  height: 47px;
+}
+
+.help a {
+  font-size: 13px;
+  line-height: 16px;
+  color: #323232;
+}
+
 .timetable {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
-
 }
 
 .phone {
@@ -69,15 +93,20 @@ a {
 .features-list {
   font-weight: 400;
   color: #323232;
-  columns: 2;
+  column-count: 2;
   list-style: none;
+  display: inline-block;
   background-image: url("../img/waffle-big.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.nwes-box {
+div.index-columns {
+  column-count: 2;
+}
+
+.news-box {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -87,4 +116,101 @@ a {
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
+  /*тут надо задавать размеры в пикселях или я неправильные ключевые слова использую? Пытался задать размеры как у исходников, но отображается как-то криво. И как отобразить текст внутри бэкграунда?*/
 }
+
+.news a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.subscription {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+
+  background-image: url("../img/mail-backing.png"), url("../img/mail-background.png");
+  background-position: top center, top center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+}
+
+.contacts {
+font-size: 14px;
+line-height: 20px;
+font-weight: 400;
+color: #323232;
+background-color: rgba(255, 255, 255, 0.98);
+background-size: 305px 308px;
+background-repeat: no-repeat;
+border-radius: 10px;
+}
+
+.contacts b {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+}
+
+.social-list,
+ .info {
+  list-style: none;
+}
+
+.social-button {
+  display: inline;
+  /*хотел отобразить в строку*/
+}
+
+.info {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  column-count: 2;
+}
+
+ .info:first-child::before {
+   content: "";
+   /*хотел сюда добавить свг сердечко но как-то не вышло*/
+ }
+
+ .feedback {
+   background-color: #f8f7f4;
+   background-size: 481px 445px;
+   border-radius: 5px;
+   /*почему когда я задаю размеры бэкграунд все равно растягивается во всю страницу?*/
+ }
+
+.feedback  h3{
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: #323232;
+}
+
+.feedback input {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #999999;
+  border: 1px solid #b2b2b2;
+  border-radius: 5px;
+  width: 270px;
+  height: 47px;
+}
+
+ .comments {
+   font-size: 16px;
+   line-height: 24px;
+   font-weight: 400;
+   color: #999999;
+   border: 1px solid #b2b2b2;
+   border-radius: 5px;
+   width: 431px;
+   height: 158px;
+ }
