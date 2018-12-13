@@ -6,7 +6,6 @@ body {
   line-height: 22px ;
   color: #ffffff;
   text-transform: none;
-
   background-color: #849D8F;
 }
 
@@ -55,16 +54,6 @@ a {
   border-radius: 5px;
 }
 
-.search .input-text {
-  width: 314px;
-  height: 47px;
-}
-
-.login-link .input-text {
-  width: 244px;
-  height: 47px;
-}
-
 .help a {
   font-size: 13px;
   line-height: 16px;
@@ -93,17 +82,12 @@ a {
 .features-list {
   font-weight: 400;
   color: #323232;
-  column-count: 2;
   list-style: none;
   display: inline-block;
   background-image: url("../img/waffle-big.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-div.index-columns {
-  column-count: 2;
 }
 
 .news-box {
@@ -119,7 +103,7 @@ div.index-columns {
   /*тут надо задавать размеры в пикселях или я неправильные ключевые слова использую? Пытался задать размеры как у исходников, но отображается как-то криво. И как отобразить текст внутри бэкграунда?*/
 }
 
-.news a {
+.main-news {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -139,31 +123,32 @@ div.index-columns {
 }
 
 .contacts {
-font-size: 14px;
-line-height: 20px;
-font-weight: 400;
-color: #323232;
-background-color: rgba(255, 255, 255, 0.98);
-background-size: 305px 308px;
-background-repeat: no-repeat;
-border-radius: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #323232;
+  background-color: rgba(255, 255, 255, 0.98);
+  border-radius: 10px;
 }
 
-.contacts b {
+.bold {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #323232;
 }
 
-.social-list,
- .info {
+.social-list li {
+  list-style: none;
+  display: inline;
+}
+
+.info {
   list-style: none;
 }
 
 .social-button {
   display: inline;
-  /*хотел отобразить в строку*/
 }
 
 .info {
@@ -171,20 +156,19 @@ border-radius: 10px;
   line-height: 16px;
   font-weight: 400;
   color: #ffffff;
-  column-count: 2;
 }
 
- .info:first-child::before {
-   content: "";
-   /*хотел сюда добавить свг сердечко но как-то не вышло*/
- }
+.info:first-child::before {
+ content: "";
+ /*хотел сюда добавить свг сердечко но как-то не вышло*/
+}
 
- .feedback {
-   background-color: #f8f7f4;
-   background-size: 481px 445px;
-   border-radius: 5px;
-   /*почему когда я задаю размеры бэкграунд все равно растягивается во всю страницу?*/
- }
+.feedback {
+ background-color: #f8f7f4;
+ background-size: 481px 445px;
+ border-radius: 5px;
+ /*почему когда я задаю размеры бэкграунд все равно растягивается во всю страницу?*/
+}
 
 .feedback  h3{
   font-size: 24px;
@@ -193,24 +177,51 @@ border-radius: 10px;
   color: #323232;
 }
 
-.feedback input {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-  color: #999999;
-  border: 1px solid #b2b2b2;
-  border-radius: 5px;
-  width: 270px;
-  height: 47px;
+.comments {
+ font-size: 16px;
+ line-height: 24px;
+ font-weight: 400;
+ color: #999999;
+ border: 1px solid #b2b2b2;
+ border-radius: 5px;
+ width: 431px;
+ height: 158px;
 }
 
- .comments {
-   font-size: 16px;
-   line-height: 24px;
-   font-weight: 400;
-   color: #999999;
-   border: 1px solid #b2b2b2;
-   border-radius: 5px;
-   width: 431px;
-   height: 158px;
- }
+/*catalog*/
+
+.in-cart {
+ font-size: 13px;
+ line-height: 16px;
+ font-weight: 400;
+ color: #323232;
+}
+
+.total-price {
+ font-size: 15px;
+ line-height: 18px;
+ font-weight: 700;
+ color: #323232;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.product-name {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.catalog-item-price {
+  font-size: 45px;
+  line-height: 13,3px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.kg {
+  font-size: 30px;
+}
