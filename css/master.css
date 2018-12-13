@@ -1,4 +1,4 @@
-body {
+.body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
@@ -9,7 +9,7 @@ body {
   background-color: #849D8F;
 }
 
-a {
+.link {
   text-decoration: underline;
   color: #ffffff;
   text-decoration-color: #ffffff;
