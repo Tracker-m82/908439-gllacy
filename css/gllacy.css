@@ -1,11 +1,9 @@
 .body {
-  margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 22px ;
   color: #ffffff;
-  text-transform: none;
   background-color: #849D8F;
 }
 
@@ -13,6 +11,12 @@
   text-decoration: underline;
   color: #ffffff;
   text-decoration-color: #ffffff;
+}
+
+.header-link {
+  text-decoration: none;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .main-navigation {
@@ -54,7 +58,7 @@
   border-radius: 5px;
 }
 
-.help a {
+.help .link {
   font-size: 13px;
   line-height: 16px;
   color: #323232;
@@ -64,12 +68,14 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  color: #ffffff;
 }
 
 .phone {
   font-size: 22px;
   line-height: 24px;
   font-weight: 700;
+  color: #ffffff;
 }
 
 .feature {
@@ -84,6 +90,7 @@
   color: #323232;
   list-style: none;
   display: inline-block;
+  vertical-align: baseline;
   background-image: url("../img/waffle-big.png");
   background-position: top center;
   background-repeat: no-repeat;
@@ -95,19 +102,19 @@
   line-height: 22px;
   font-weight: 500;
   color: #323232;
-
   background-image: url("../img/strawberry-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
-  /*тут надо задавать размеры в пикселях или я неправильные ключевые слова использую? Пытался задать размеры как у исходников, но отображается как-то криво. И как отобразить текст внутри бэкграунда?*/
 }
 
-.main-news {
+.main-news-link {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   color: #323232;
+  text-decoration: none;
+  border-bottom: 2px solid #323232;
 }
 
 .subscription {
@@ -115,7 +122,6 @@
   line-height: 22px;
   font-weight: 400;
   color: #323232;
-
   background-image: url("../img/mail-backing.png"), url("../img/mail-background.png");
   background-position: top center, top center;
   background-repeat: no-repeat, no-repeat;
@@ -131,14 +137,14 @@
   border-radius: 10px;
 }
 
-.bold {
+.bold-text {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #323232;
 }
 
-.social-list li {
+.social-list-item {
   list-style: none;
   display: inline;
 }
@@ -186,6 +192,8 @@
  border-radius: 5px;
  width: 431px;
  height: 158px;
+ min-width: 431px;
+ max-width: 431px;
 }
 
 /*catalog*/
